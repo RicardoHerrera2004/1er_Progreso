@@ -20,7 +20,7 @@ int main (void) {
     
     for (i = 0; i <= numero ; i++)
     {
-        resultado=resultado+1;
+        resultado=resultado+i;
     }
 
     printf ("La suma de Gauss del nùmero %d es de: %d \n", numero, resultado);
