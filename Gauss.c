@@ -4,6 +4,7 @@ int main (void) {
 
     int numero;
     int i;
+    int resultado =0;
 
     do
     {
@@ -17,12 +18,12 @@ int main (void) {
     } while (numero<0);
 
     
-    for (i = 0; i < 0; i++)
+    for (i = 0; i <= numero ; i++)
     {
-        numero=numero+1;
+        resultado=resultado+1;
     }
 
-    printf ("Su numero es: %d", numero);
+    printf ("La suma de Gauss del nùmero %d es de: %d \n", numero, resultado);
     
 
     return 0;
