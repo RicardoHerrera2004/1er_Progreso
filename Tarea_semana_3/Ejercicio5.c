@@ -11,16 +11,17 @@ int main (void) {
     scanf ("%d", &numero1);
     printf ("Ingrese el segundo numero (El numero que finalizara el intervalo): ");
     scanf ("%d", &numero2);
-    
+    printf ("Los numeros que terminan en 4 y se encuentran en este intervalo son: \n");
+
     for (numero1 = 0; numero1 <= numero2; numero1++)
     {
         resultados=numero1;
-        printf ("%d\n", resultados);
+        if (resultados%10==4)
+        {
+            printf ("%d\n", resultados);
+        }
         resultados++;
     }
     
-
-   printf ("El primer numero: %d y el segundo numero: %d \n", numero1, numero2);
-
     return 0;
 }
