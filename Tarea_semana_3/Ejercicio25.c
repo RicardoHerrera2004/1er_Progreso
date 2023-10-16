@@ -4,7 +4,7 @@ int main (void) {
 
     int numero;
     int digito;
-    int contador;
+    int contador=0;
     int resultado;
     int digito_total=0;
     printf ("Ingrese un numero: ");
@@ -19,7 +19,8 @@ int main (void) {
         numero =numero/10;
     }
     
-printf ("La suma de los digito es igual a: %d \n", digito_total);
+    resultado=digito_total/contador;
+    printf ("El promedio entero de los digitos del numero ingreso es:  %d \n", resultado);
 
     return 0;
 }
