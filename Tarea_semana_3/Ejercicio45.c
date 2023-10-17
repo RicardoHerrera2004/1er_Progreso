@@ -22,13 +22,19 @@ int main (void) {
         
     } while (numero<=1);
     
-    for (int primer_numero=1; primer_numero < numero; primer_numero++)
+    for (int primer_numero=1; primer_numero <= numero; primer_numero++)
     {
        ayudante=primer_numero;
-       printf ("%d \n", ayudante);        
+       printf ("Los numero comprendidos son: %d \n", ayudante);  
+       factorial=1;      
+        
+        for (contador_fac=1; contador_fac <=ayudante; contador_fac++)
+        {
+            factorial=contador_fac*factorial;
+            ayudante=primer_numero;
+        }
+            printf ("El factorial de los numeros comprendidos son: %d \n", factorial);
     }
-    
-    printf ("%d", numero);
 
     return 0;
 }
